@@ -130,7 +130,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="ripple.js"></script>
     <script>
-      let swiper = new Swiper(".swiper", {
+      var swiper = new Swiper(".swiper", {
         direction: "horizontal",
         mousewheel: true,
         speed: 1200,
@@ -141,6 +141,20 @@
             return (
               '<span class="' + className + '"> 0' + (index + 1) + "</span>"
             );
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        effect: "creative",
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: [0, 0, -400],
+          },
+          next: {
+            translate: ["100%", 0, 0],
           },
         },
       });
