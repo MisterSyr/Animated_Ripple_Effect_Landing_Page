@@ -10,3 +10,15 @@ body {
   font-family: "Poppins", sans-serif;
   background: #106667;
 }
+
+.swiper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
