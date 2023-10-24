@@ -22,3 +22,8 @@ body {
   height: 100%;
   position: relative;
 }
+
+.bg {
+  position: absolute;
+  inset: 0;
+}
