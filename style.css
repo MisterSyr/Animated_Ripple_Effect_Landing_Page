@@ -123,3 +123,15 @@ body {
 .swiper-pagination-bullet-active {
   font-size: 14px;
 }
+
+nav {
+  position: fixed;
+  z-index: 100;
+  font-size: 12px;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 40px 80px;
+  gap: 20px;
+}
