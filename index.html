@@ -130,6 +130,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="ripple.js"></script>
     <script>
+      $(".swiper-slide .bg").ripples({
+        resolution: 1080,
+        perturbance: 0.02,
+        interactive: true,
+      });
+
       var swiper = new Swiper(".swiper", {
         direction: "horizontal",
         mousewheel: true,
