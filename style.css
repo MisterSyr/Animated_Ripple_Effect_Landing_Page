@@ -156,3 +156,17 @@ nav a.active::after {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.scroll {
+  position: fixed;
+  z-index: 100;
+  bottom: 40px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 10px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transform: rotate(-90deg);
+  letter-spacing: 4px;
+}
