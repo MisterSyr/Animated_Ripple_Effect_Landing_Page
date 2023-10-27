@@ -17,6 +17,7 @@
     />
     <title>Maldives</title>
   </head>
+
   <body>
     <main>
       <nav>
@@ -122,17 +123,30 @@
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-      integrity="sha512-FmrxaqOldbQJq7ruBRLrIzxYZxDJLH2GBKvJqJz8Jf7WKEgDkvAkfta6JeInBYExpr+R0aw8niow9OiunjDigQ=="
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="ripple.js"></script>
     <script>
-      gsap.from(".bg", { opacity: 0, duration: 2 });
-      gsap.to(".text h2", { y: 0, duration: 0.9, opacity: 1, delay: 0.5 });
-      gsap.to(".text p", { y: 0, duration: 0.9, opacity: 1, delay: 0.5 });
+      gsap.from(".bg", {
+        opacity: 0,
+        duration: 2,
+      });
+      gsap.to(".text h2", {
+        y: 0,
+        duration: 0.9,
+        opacity: 1,
+        delay: 0.5,
+      });
+      gsap.to(".text p", {
+        y: 0,
+        duration: 0.9,
+        opacity: 1,
+        delay: 0.5,
+      });
 
       $(".swiper-slide .bg").ripples({
         resolution: 1080,
