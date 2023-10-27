@@ -130,6 +130,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="ripple.js"></script>
     <script>
+      gsap.from(".bg", { opacity: 0, duration: 2 });
+      gsap.to(".text h2", { y: 0, duration: 0.9, opacity: 1, delay: 0.5 });
+      gsap.to(".text p", { y: 0, duration: 0.9, opacity: 1, delay: 0.5 });
+
       $(".swiper-slide .bg").ripples({
         resolution: 1080,
         perturbance: 0.02,
